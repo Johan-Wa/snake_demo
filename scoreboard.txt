@@ -1,0 +1,12 @@
+brand,12
+selm, 10
+selm, 9
+rodri, 7
+pascu, 6
+mudock, 5
+lola, 4
+ryno, 3
+hipno, 3
+klein, 2
+suguro, 2
+tashiva, 1
