@@ -45,8 +45,8 @@ def save_score(name, score, file):
         data = f.readlines()
     with open(file, 'w') as f:
         try:
-            data = sorted(data, key=lambda x: x.split(',')[1])
-            data.sort(key=lambda x: x.split(',')[1], reverse=True)
+            data = sorted(data, key=lambda x: int(x.split(',')[1]), reverse=True )
+            #data.sort(key=lambda x: x.split(',')[1], reverse=True)
             for i in data:
                 if i[-1] == '\n':
                     f.write(i)

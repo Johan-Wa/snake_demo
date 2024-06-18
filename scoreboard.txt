@@ -1,4 +1,7 @@
+jarl,11
 jorl,7
 yul,5
 orl,5
 yorcc,4
+jkl,2
+kljfd,1
