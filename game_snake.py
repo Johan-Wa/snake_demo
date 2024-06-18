@@ -3,6 +3,8 @@ import curses
 from curses import wrapper, textpad
 from random import randint
 
+from add_score import inpbox, save_score 
+
 # ----------------- Classes ------------------
 class SnakeGame():
     def __init__(self, name):
@@ -96,6 +98,9 @@ class SnakeGame():
                 stdscr.addstr(sh//2, sw//2 - len(msg)//2, msg)
                 stdscr.nodelay(0)
                 stdscr.getch()
+                p_name = inpbox(stdscr, 'Save your score')
+                save_score(p_name, score, 'scoreboard.txt')
+                stdscr.refresh()
                 break
 
             stdscr.refresh()

@@ -41,6 +41,7 @@ class DisplayMenu():
         curses.curs_set(0)
         # Colors pairs
         curses.init_pair(1, curses.COLOR_BLACK, curses.COLOR_WHITE)
+        curses.init_pair(2, curses.COLOR_WHITE, curses.COLOR_BLACK)
 
         # Initialize the selection
         current_row = 0
